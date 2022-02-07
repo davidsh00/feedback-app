@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+body {
+  background-color: #311150;
+}
+header {
+  text-align: center;
+  font-weight: bolder;
+  padding: 1rem;
+}
+header .header-title {
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.container {
+  width: 90%;
+  max-width: 768px;
+}
+.feedback-box {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-box .feedback-rating {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 102, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%);
+  border-radius: 50%;
+  color: white;
+}
+.reverse-card {
+  color: white;
+}
+.feedback-box .btn{
+  padding: 0.25rem;
+  position: absolute;
+}
+.feedback-box .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(194, 5, 5, 0.4) !important;
+}
+.feedback-box .close {
+  right: 1rem;
+  top: 0.1rem;
+}
+.feedback-box .edit{
+  top:.1rem;
+  right: 3rem;
+}
+.feedback-state {
+  margin-bottom: 0.5rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.feedback-state h4 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.feedback-form {
+    text-align: center;
+  width: 100%;
+}
+.feedback-form .input {
+    width: 100%;
+    display: inline-block;
+  position: relative;
+  max-width: 400px;
+}
+.feedback-form .input input {
+  width: 100%;
+  padding: 0.5rem;
+  padding-right: 80px;
+}
+.feedback-form .input button {
+  padding: 0 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.feedback-form .message {
+  color: red;
+}
+.feedback-form .send-rating ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap:5px 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-form .send-rating input {
+  display: none;
+}
+.feedback-form .send-rating label {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: orange;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.feedback-form .send-rating li:last-child label {
+}
+.feedback-form .send-rating label:hover {
+  background-color: rgba(48, 17, 80, 0.8);
+}
+.feedback-form .send-rating input:checked + label {
+  color: white;
+  background-color: orange;
+}
+.bread-crumb{
+  width: 100%;
+  background-color: rgb(24, 0, 92);
+  padding:2rem 1rem;
+  margin-bottom: 2rem;
+  color:white;
+  
+}
+.bread-crumb a{
+  color:inherit;
+  text-decoration: none;
+}
+.bread-crumb a:not(:last-child)::after{
+content:"-";
+color:white;
+padding:0 .5rem;
+}
+.bread-crumb a.active{
+  color:gray;
+}
